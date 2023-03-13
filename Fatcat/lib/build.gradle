@@ -27,6 +27,15 @@ dependencies {
     implementation 'com.google.guava:guava:31.1-jre'
 }
 
+jar{
+     manifest{
+     attributes 'Main-Class' : 'fatcat.Main'
+     
+     }
+     mainClassName = 'fatcat.Main'
+
+}
+
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
